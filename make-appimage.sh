@@ -15,7 +15,7 @@ export DEPLOY_SYS_PYTHON=1
 # Deploy dependencies
 quick-sharun \
 	/usr/bin/meganimus      \
-	/usr/share/meganimus    \
+	/usr/share/Meganimus    \
 	/usr/lib/libQt6Core.so* \
 	/usr/lib/libQt6Gui.so*
 
