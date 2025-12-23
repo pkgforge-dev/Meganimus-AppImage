@@ -12,6 +12,11 @@ export ICON=/usr/share/icons/hicolor/scalable/apps/meganimus.svg
 export DESKTOP=/usr/share/applications/meganimus.desktop
 export DEPLOY_SYS_PYTHON=1
 
+# workaround horrible bug in file
+# https://bugs.astron.com/view.php?id=704
+mv -v /usr/bin/meganimus /usr/bin/meganimus.py
+ln -s meganimus.py /usr/bin/meganimus
+
 # Deploy dependencies
 quick-sharun \
 	/usr/bin/meganimus      \
